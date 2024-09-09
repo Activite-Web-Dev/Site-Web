@@ -1,0 +1,31 @@
+main *{
+    border: green 1px solid;
+}
+main div:not(div *){
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+main div h2{
+    padding: 20px;
+}
+main div .activite{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 100vw;
+    overflow: scroll;
+}
+main div .activite a{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10rem;
+    height: 9rem;
+}
+main div .activite a:hover{
+    background-color: hsl(240 4.8% 95.9%);
+    color: black;
+}
