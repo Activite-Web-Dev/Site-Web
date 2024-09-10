@@ -24,6 +24,8 @@ main div .activite a{
     cursor: pointer;
     width: 10rem;
     height: 9rem;
+    color: black;
+    text-decoration: none;
 }
 main div .activite a:hover{
     background-color: hsl(240 4.8% 95.9%);
