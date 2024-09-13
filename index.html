@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activité - Ludovic</title>
+    <title>We developed it.</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="shortcut icon" href="./static/img/web-dev.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Activité</h1>
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search">
+            <input type="text">
+        </div>
     </header>
     <main>
-        <section class="top">
-            <div class="activite-coming">
-                <h2>Activité a venir</h2>
-                <div class="activite">
-                    <a href="web-dev" class="web-dev">
-                        <h3>Activité Parascolaire Developpement Web</h3>
-                        <p>Click pour plus d'information</p>
-                    </a>
+        <div class="Activity">
+            <div class="time">
+                <div class="mobile">
+                    <input type="radio" name="activity" id="coming">
+                    <label for="coming">A venir</label>
+                    <input type="radio" name="activity" id="ongoing">
+                    <label for="ongoing">En cours</label>
+                    <input type="radio" name="activity" id="past">
+                    <label for="past">Passer</label>
                 </div>
-            </div>            
-        </section>
-        <section class="bottom">
-            <div class="activite-ongoing">
-                <h2>Activité en cours</h2>
-                <div class="activite"></div>
+                <div class="computer">
+                    <h1 class="coming">A venir</h1>
+                    <h1 class="ongoing">En cours</h1>
+                    <h1 class="past">Passer</h1>
+                </div>
             </div>
-            <div class="activite-finish">
-                <h2>Activité passé</h2>
-                <div class="activite"></div>
-            </div>            
-        </section>
+            <div class="coming">
+
+            </div>
+            <div class="ongoing">
+
+            </div>
+            <div class="past">
+
+            </div>
+        </div>
     </main>
 </body>
 </html>

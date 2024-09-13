@@ -1,13 +1,28 @@
-main *{
-    border: green 1px solid;
+main .Activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-main{
-    display: grid;
-    grid-template-rows: 30% auto;
+main .Activity .time{
+    background-color: gray;
 }
-
-main .bottom{
-    display: grid;
-    grid-template-columns: 50% 50%;
+main .Activity .time input{
+    display: none;
+}
+main .Activity .time label{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+main .Activity .time input:checked + label{
+    background-color: white;
+    color: black;
 }
