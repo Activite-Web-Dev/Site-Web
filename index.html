@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We developed it.</title>
+    <title>WeDevIt.ca</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="shortcut icon" href="./static/img/web-dev.png" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="/">Accueil</a>
+            <a href="/about">À Propos</a>
         </div>
         <div class="search">
-            <input type="text">
+            <label for="search">Recherche une activité:</label>
+            <input type="text" id="search">
         </div>
     </header>
     <main>
-        <div class="Activity">
-            <div class="time">
-                <div class="mobile">
-                    <input type="radio" name="activity" id="coming">
-                    <label for="coming">A venir</label>
-                    <input type="radio" name="activity" id="ongoing">
-                    <label for="ongoing">En cours</label>
-                    <input type="radio" name="activity" id="past">
-                    <label for="past">Passer</label>
+        <section id="activity">
+            <div class="activity-group">
+                <div class="coming">
+                    <div class="header-group">
+                        <h1>Activité à venir</h1>
+                    </div>
+                    <li>
+                        <div class="left">
+                            <h2>Développement Web</h2>
+                            <p>Description</p>
+                        </div>
+                        <div class="right">
+                            <a href="/web-dev">Plus</a>
+                        </div>
+                    </li>
                 </div>
-                <div class="computer">
-                    <h1 class="coming">A venir</h1>
-                    <h1 class="ongoing">En cours</h1>
-                    <h1 class="past">Passer</h1>
+                <div class="ongoing">
+                    <div class="header-group">
+                        <h1>Activité en cours</h1>
+                    </div>
+                </div>
+                <div class="past">
+                    <div class="header-group">
+                        <h1>Activité passer</h1>
+                    </div>
                 </div>
             </div>
-            <div class="coming">
-
-            </div>
-            <div class="ongoing">
-
-            </div>
-            <div class="past">
-
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>
